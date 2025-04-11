@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Изучение Русского Языка</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHq6xQ8C5vQb+5VYk0mzhF1YJmObYylcU9G7uP3nZmpw2nP5b5u6SmK+OBH+5w8ZVn3e9iRQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Изучение Русского Языка</h1>
+        <div class="tabs">
+            <button class="tab-button active" data-tab="vocabulary">Словарь</button>
+            <button class="tab-button" data-tab="quiz">Викторина</button>
+            <button class="tab-button" data-tab="flashcards">Карточки</button>
+        </div>
+        <div class="tab-content" id="vocabulary">
+            <h2>Словарь</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Русское слово</th>
+                        <th>Перевод</th>
+                    </tr>
+                </thead>
+                <tbody id="vocabulary-table">
+                    <!-- Слова будут добавлены через JavaScript -->
+                </tbody>
+            </table>
+        </div>
+        <div class="tab-content" id="quiz" style="display: none;">
+            <h2>Викторина</h2>
+            <div class="quiz-container">
+                <p id="quiz-question">Переведите на английский: <span id="quiz-word"></span></p>
+                <input type="text" id="quiz-answer" placeholder="Ваш ответ">
+                <button class="btn" id="quiz-submit">Проверить</button>
+                <p id="quiz-result"></p>
+                <p id="quiz-score">Правильных ответов: 0 из 0</p>
+            </div>
+        </div>
+        <div class="tab-content" id="flashcards" style="display: none;">
+            <h2>Карточки</h2>
+            <div class="flashcard-container">
+                <div class="flashcard" id="flashcard">
+                    <div class="front" id="flashcard-front">Нажмите "Показать перевод"</div>
+                    <div class="back" id="flashcard-back"></div>
+                </div>
+                <button class="btn" id="show-translation">Показать перевод</button>
+                <button class="btn" id="next-card">Следующая</button>
+            </div>
+        </div>
+    </div>
+    <!-- Водяной знак -->
+    <div class="watermark">СДЕЛАЛ МИШКА КОНДРАШОВ</div>
+
+    <!-- Всплывающее окно (Pop-up) -->
+    <div class="popup-overlay" id="popup-overlay">
+        <div class="popup-content">
+            <button class="close-popup" id="close-popup">&times;</button>
+            <h2>Разработал Миша Кондрашов</h2>
+            <p>Скинь автору на шашлык:</p>
+            <p><strong>Ozon Банк:</strong> 2204 2401 4983 7629</p>
+            <button class="btn" id="close-popup-btn">Закрыть</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
