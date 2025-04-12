@@ -8,6 +8,8 @@
 
 # ENG
 <h3 align="center">During the implementation of the training project, I was involved in the development of an educational service positioned as a competitor to the Duolingo platform. I was allowed to publish on GitHub a part of the project that I created myself. All rights reserved under the Apache License 2.0.</h3>
+<h3 align="center">The project includes code written in the Python programming language. It is stored in a file named <a href="https://github.com/kondrashov-m/project_ruslingo/blob/main/Python_Version_Tkinter.py">Python_Version_Tkinter.py</a>. The tkinter library was used in this code to create the user interface.< / h3>
+<h3 align="center">Later, the code was rewritten in JavaScript, and the visual interface was redesigned using HTML and CSS. The project is stored in the folder <a href="https://github.com/kondrashov-m/project_ruslingo/tree/main/Release" >Release</a>.</h3>
 
 # Скриншот (Screenshot)
 
